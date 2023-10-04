@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Quicksand"; 
+    src: url("../assets/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+* {
+    font-family: Quicksand;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
