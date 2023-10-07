@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmacia Perotti Ricardi</title>
+    <title>Farmacia Perotti Ricardi - Hacé tu pedido</title>
+    <meta name="comprar productos en farmacias"  content="farmacias, Córdoba, Marull, comprar productos">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/29ed7d547b.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../assets/logo/favicon.png">
@@ -14,13 +15,13 @@
 <body>
     <div id="container">
         
-        <header>
+        <header class="mi-header">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <nav class="navbar bg-body-tertiary">
                         <div class="container">
                         <a class="navbar-brand" href="../index.html">
-                            <img src="../assets/logo/logo.png" alt="logo" width="150px">
+                            <img src="../assets/logo/logo.png" alt="logo" width="170px">
                         </a>
                         </div>
                     </nav>
@@ -29,28 +30,30 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./haceTuPedido.html">Hacé tu pedido</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#cuidaTuSalud">Cuidá tu salud</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#quienesSomos">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../#Contacto">Contacto</a>
-                    </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./haceTuPedido.html">Hacé tu pedido</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../index.html#cuidaTuSalud">Cuidá tu salud</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../index.html#quienesSomos">Quienes somos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../index.html#contacto">Contacto</a>
+                      </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
         <div id="dondePedir">
-            <div><h2 id="dondePedirTitulo">Hacé tu pedido</h2>
-                <a href="https://www.farmaonline.com/"><img id="farmaonline" src="../assets/haceTuPedido/farmaonline.png" alt="farmaonline"/></a>
-                <a href="https://gpsfarma.com/"><img id="gps" src="../assets/haceTuPedido/gpsfarma.png" alt="gpsfarma"/></a>
-            </div>
+          <div id="contenedordondePedir">
+              <div><h2 id="dondePedirTitulo">Hacé tu pedido</h2>
+                  <a href="https://www.farmaonline.com/"><img class="pedidos" src="../assets/haceTuPedido/farmaonline.png" alt="farmaonline"/></a>
+                  <a href="https://gpsfarma.com/"><img class="pedidos" src="../assets/haceTuPedido/gpsfarma.png" alt="gpsfarma"/></a>
+              </div>
+            </div>  
 
             <div id="comoPedirlo">
                 <h3 id="comoPedirTitulo">Como pedir</h3>
@@ -63,30 +66,47 @@
             </div>
         </div>
 
-        <div id="Contacto">
+        <div id="contacto">
             <h3>CONTACTO</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13680.576030844928!2d-62.8248086!3d-30.9943615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94349d667646e223%3A0x6eb2577ebad97ef4!2sFarmacia%20Perotti%20Ricardi!5e0!3m2!1ses-419!2sar!4v1693149061436!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <i class="fa-solid fa-location-dot" style="color: #0081ac;"></i>
-            <p class="direccion"><span>Sarmiento 146, Marull, Córdoba</span></p>
-            <i class="fa-solid fa-phone" style="color: #0081ac;"></i>
-            <p class="direccion"><span>Tel: 3563-492253</span></p>
-            <a href="https://www.instagram.com/farmacia.perotti.ricardi/"><i class="fa-brands fa-instagram" style="color: #0081ac;"></i></a>
-            <a href="https://www.facebook.com/100064042515330/photos/"><i class="fa-brands fa-facebook" style="color: #0081ac;"></i></a>
-            <div class="row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="Nombre">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Apellido">
-              </div>
+  
+            <div id="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13680.576030844928!2d-62.8248086!3d-30.9943615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94349d667646e223%3A0x6eb2577ebad97ef4!2sFarmacia%20Perotti%20Ricardi!5e0!3m2!1ses-419!2sar!4v1693149061436!5m2!1ses-419!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Comments</label>
+  
+            <div id="info">
+                <i class="fa-solid fa-location-dot" style="color: #0081ac;"></i>
+                <p class="direccion">Sarmiento 146, Marull, Córdoba</p>
+                <span><i class="fa-solid fa-phone" style="color: #0081ac;"></i></span>
+                <span><p class="telefono">Tel: 3563-492253</p></span>
+              
             </div>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
+  
+            <div id="redesSociales">
+              <a class="redes" href="tu-enlace-de-instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a class="redes" href="tu-enlace-de-facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          
+            <div id="formulario">
+              <h6>Envíanos un mensaje</h6>
+          
+              <div id="nombre" class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+              </div>
+          
+              <div id="comentario" class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comentario</label>
+              </div>
+          
+              <div id="email" class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
+              </div>
             </div>
           </div>
 

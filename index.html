@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacia Perotti Ricardi</title>
+    <meta name="Farmacias"  content="farmacias, Córdoba, Marull, comprar productos">
     <link rel="shortcut icon" href="assets\logo\favicon.png">
     <script src="https://kit.fontawesome.com/29ed7d547b.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -77,13 +78,16 @@
           </div>
         </aside>
 
-        <div>
+        <div id="haceTuPedido">
           <a href="pages\hacetupedido.html"> <img  src="assets\index\hacetupedido.png" alt="hacetupedido"/> </a>
-          <p> Pedí lo que necesitas y retirá en <strong>nuestra farmacia!</strong></p>
+          <div class="text-container">
+            <p> Pedí lo que necesitas y retirá en</p>
+            <p><strong>nuestra farmacia!</strong></p>
+          </div>
         </div>
 
         <div class="slider">
-          <h3>Algunas de nuestras marcas</h3>
+          <h3 id="tituloMarcas">Algunas de nuestras marcas</h3>
           <div class="slide-track">
               <div class="slide">
                   <img src="assets\index\nuestrasMarcas\marca.png" alt="marca">
@@ -124,52 +128,57 @@
         </div>
 
         <div id="cuidaTuSalud">
-          <h3>Cuidá tu salud</h3>
-          <div class="card">
-            <img src="assets\index\skincare1.png" class="card-img-top" alt="skincare">
-          
-            <div class="card-body">
-              <h5 class="card-title">Cuidado de la piel</h5>
-              <p class="card-text">¿Sabias que para tener una piel sana es muy importante el protector solar? Acá encontrás más info para el cuidado de tu piel.</p>
-              <a href="pages\skincare.html" class="btn btn-primary">+ info</a>
-            </div>
-          </div>
+          <h3 id="titulo">Cuidá tu salud</h3>
+        
+          <div id="cards">
 
-          <div class="card">
-            <img src="assets\index\ojoseco1.png" class="card-img-top" alt="ojoSeco">
-          
-            <div class="card-body">
-              <h5 class="card-title">Ojo seco</h5>
-              <p class="card-text">El síndrome del ojo seco ocurre cuando los ojos no producen suficientes lágrimas para mantenerse húmedos o cuando las lágrimas no cumplen correctamente su función. Esto puede hacer que sienta incomodidad en los ojos y, en algunos casos, también puede causar problemas de visión.</p>
-              <a href="pages\ojoSeco.html" class="btn btn-primary">+ info</a>
+            <div  class="card">
+              <img src="assets\index\skincare1.png" class="card-img-top" alt="skincare">
+              <div class="card-body">
+                <h5 class="card-title">Cuidado de la piel</h5>
+                <p class="card-text">¿Sabias que para tener una piel sana es muy importante el protector solar? Acá encontrás más info para el cuidado de tu piel.</p>
+                <a href="pages\skincare.html" class="btn btn-primary">+ info</a>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img src="assets\index\covid1.png" class="card-img-top" alt="covid">
-          
-            <div class="card-body">
-              <h5 class="card-title">Covid</h5>
-              <p class="card-text">Entrá y lee nuestras recomendaciones para el Covid19.</p>
-              <a href="" class="btn btn-primary">+ info</a>
+            <div class="card">
+              <img src="assets\index\ojoseco1.png" class="card-img-top" alt="ojoSeco">
+              <div class="card-body">
+                <h5 class="card-title">Ojo seco</h5>
+                <p class="card-text">El síndrome del ojo seco ocurre cuando los ojos no producen suficientes lágrimas para mantenerse húmedos o cuando las lágrimas no cumplen correctamente su función. Esto puede hacer que sienta incomodidad en los ojos y, en algunos casos, también puede causar problemas de visión.</p>
+                <a href="pages\ojoSeco.html" class="btn btn-primary">+ info</a>
+              </div>
             </div>
+
+            <div class="card">
+              <img src="assets\index\covid1.png" class="card-img-top" alt="covid">
+              <div class="card-body">
+                <h5 class="card-title">Covid</h5>
+                <p class="card-text">Entrá y lee nuestras recomendaciones para el Covid19.</p>
+                <a href="" class="btn btn-primary">+ info</a>
+              </div>
+            </div>
+
           </div>
 
         </div>
         
-        
-        <div id="quienesSomos" class="valores">
+        <div id="quienesSomos">
           <h2>Al cuidado de su salud...</h2>
-              <table>
-              <tr>
-                  <td>Compromiso</td>
-                  <td><img class="valor" src="assets\valores\valor1.png"></td>
-                  <td>Atención personalizada</td>
-                  <td><img class="valor" src="assets\valores\valor2.png"></td>
-                  <td>Profesionalismo</td>
-                  <td><img class="valor" src="assets\valores\valor3.png"></td>
-                </tr>
-                </table>
+          <table>
+            <tr>
+              <td>Compromiso</td>
+              <td><img class="valor" src="assets\valores\valor1.png"></td>
+            </tr>
+            <tr>
+              <td>Atención personalizada</td>
+              <td><img class="valor" src="assets\valores\valor2.png"></td>
+            </tr>
+            <tr>
+              <td>Profesionalismo</td>
+              <td><img class="valor" src="assets\valores\valor3.png"></td>
+            </tr>
+          </table>
         </div>
 
         <div id="contacto">
