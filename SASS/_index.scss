@@ -1,0 +1,223 @@
+/*VISTA MOBILE*/
+
+#haceTuPedido {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-bottom: 20px; 
+  padding-bottom: 30px;
+
+  img {
+    max-width: 70%;
+    height: auto;
+    vertical-align: middle;
+    padding-top: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  p {
+    margin: 0; 
+    font-size: 20px;
+    text-align: center; 
+    padding: 0px; 
+    
+  }
+
+  a {
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+.slider h3 {
+  text-align: center; 
+  padding: 20px; 
+  font-weight: 900;
+  font-size: 20px;
+  background-color: rgba(219, 219, 219, 0.493);
+}
+
+#cuidaTuSalud {
+  display: flex;
+  flex-direction: column; 
+  padding: 20px; 
+
+  #titulo {
+    width: 100%; 
+    background-color: #56c271; 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    font-weight: 900;
+  }
+
+  .card {
+    margin: 10px 0; 
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .card-body {
+      padding: 10px;
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+
+    .card-text {
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+
+#quienesSomos {
+  background-image: url(/assets/back.png);
+  width: 100%;
+  height: AUTO;
+  text-align: center; 
+  padding: 20px; 
+  
+  h2 {
+    margin-bottom: 20px; 
+    font-weight: 900;
+  }
+
+  table {
+    margin: 0 auto; 
+    font-size: 20px;
+
+    td {
+      padding: 10px; 
+    }
+
+    img.valor {
+      border: solid;
+      border-color: #c5c5c559;
+      border-radius: 100%;
+      height: auto;
+      max-height: 100px;
+    }
+  }
+}
+
+
+/*VISTA DESKTOP*/
+
+@media screen and (min-width: 767px) {
+
+  #haceTuPedido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px; 
+
+  img {
+    display: grid;
+    grid-column: 1;
+    padding-left: 300px;
+    max-width: 100%;
+  }
+
+  p {
+    grid-column: 2;
+    font-size: 30px;
+    justify-content: left;
+    padding-right: 300px;
+  }
+}
+
+.slider h3{
+  text-align: center;
+  padding-top: 40px; 
+  font-weight: 900;
+  font-size: 40px;
+  background-color: white;
+}
+
+#cuidaTuSalud {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+
+  #titulo {
+    grid-column: 1 / 2; 
+  }
+
+  
+  #cards {
+    display: flex;
+    justify-content: center; 
+
+    .card {
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+      width: 30%;
+      text-align: left;
+      align-self: flex-start;
+    }
+  }
+}
+
+#quienesSomos {
+  background-image: url(/assets/back.png);
+  width: 100%;
+  height: AUTO;
+  padding: 20px; 
+  display: flex;
+  align-items:center; 
+  padding-left: 350px;
+
+  h2 {
+    margin-bottom: 20px; 
+    font-weight: 900;
+    padding-right: 30px;
+  }
+
+  table {
+    display: flexbox;
+    flex-direction: column;
+    margin: 0 ; 
+    font-size: 20px;
+    width: 30%; 
+
+    td { 
+      flex: 5; 
+      text-align: left;
+    }
+
+    tr {
+      display: flex; 
+      align-items: center; 
+      margin-right: 20px; 
+    }
+
+    img.valor {
+      border: solid;
+      border-color: #c5c5c559;
+      border-radius: 100%;
+      height: auto;
+      max-height: 80px;
+    }
+
+    .valor {
+      max-width: 70%;
+    }
+  }
+}
+}
+
+
